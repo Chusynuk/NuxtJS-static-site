@@ -7,9 +7,14 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  extends: [
-    '@nuxtjs'
+  'extends': [
+    'eslint:recommended',
+    'plugin:vue/recommended',
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'semi': ['error', 'never'],
+    'no-extra-semi': 'error',
+    'quotes': ['error', 'single'],
+  }
 }
