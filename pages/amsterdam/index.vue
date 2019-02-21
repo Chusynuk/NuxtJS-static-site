@@ -53,36 +53,32 @@ export default {
   @include grid-mixin;
 }
 
-@media #{$desktops} {
-  .container {
-    background-color: $background;
-  }
-}
-
 @media #{$tablets} {
   .container {
     background-color: pink;
+    width: stretch;
   }
 
   .grid {
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    margin-right: 10px;
-    margin-right: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
 
-@media #{$smartphones} {
+@media #{$desktops} {
   .container {
-    background-color: green;
+    background-color: red;
   }
-
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    margin-top: 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 </style>

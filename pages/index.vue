@@ -51,7 +51,7 @@ export default {
 
 @media #{$tablets} {
   .container {
-    background-color: pink;
+    // background-color: pink;
     width: stretch;
   }
 
@@ -60,21 +60,21 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
 
 @media #{$desktops} {
   .container {
-    background-color: red;
+    // background-color: red;
   }
   .grid {
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-gap: 8px;
-    // margin-right: 10vw;
-    // margin-right: 10vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 </style>

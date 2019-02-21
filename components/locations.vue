@@ -51,6 +51,7 @@ export default {
   justify-content: space-around;
   text-align: center;
   width: 50vw;
+  align-items: center;
   border: 2px solid $primary-yellow;
   border-radius: 15px;
   margin-top: 100px;
