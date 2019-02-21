@@ -1,4 +1,5 @@
-$desktops:  (min-width: 1281px);
-$tablets: (min-width: 768px) ;
-$smartphones: (min-width: 320px) and (max-width: 767px);
+$desktops:  (min-width: 1025px);
+$tablets: (min-width: 641px) ;
+// $smartphones: (min-width: 320px) and (max-width: 767px);
+$smartphones: (max-width: 640px);
 

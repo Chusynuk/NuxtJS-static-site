@@ -52,15 +52,16 @@ export default {
 @media #{$tablets} {
   .container {
     background-color: pink;
-    width: stretchs;
+    width: stretch;
   }
 
   .grid {
+    width: auto;
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
-    grid-gap: 8px;
-    // margin-right: 10vw;
-    // margin-right: 10vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 

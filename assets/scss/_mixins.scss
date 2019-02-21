@@ -14,9 +14,9 @@
 
 @mixin grid-mixin {
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
   margin-top: 10vh;
-  width: 300px;
+  width: 90vw;
   // grid-template-areas: "area1 area2"
 }

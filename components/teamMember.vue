@@ -61,7 +61,8 @@ export default {
 .hashtags {
   width: 100%;
   margin-top: 20px;
-  padding-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .location {
@@ -75,7 +76,7 @@ export default {
 
 @media #{$tablets} {
   .member {
-    place-self: center;
+    //place-self: center;
   }
 }
 </style>
