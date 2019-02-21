@@ -1,8 +1,36 @@
 <template>
-  <section class="container" />
+  <section class="container">
+    <div class="grid">
+      <teamMember
+        v-for="(member, index) in includedCities"
+        :key="index"
+        :image="member.image"
+        :location="member.location"
+        :job-position="member.role"
+        :hashtags="member.tags"
+      />
+    </div>
+  </section>
 </template>
 <script>
-export default {}
+import teamMember from '~/components/teamMember.vue'
+import members from '~/assets/team.json'
+export default {
+  name: 'CapeTown',
+  components: {
+    teamMember
+  },
+  data() {
+    return {
+      myMembers: members
+    }
+  },
+  computed: {
+    includedCities: function() {
+      return this.myMembers.filter(member => member.location === 'berlin')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
