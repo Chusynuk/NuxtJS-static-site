@@ -43,20 +43,46 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/scss/index.scss";
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 150px;
-  margin: 0 auto;
-  padding: 150px;
-  min-height: 100vh;
+  @include container-mixin;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  margin-top: 10vh;
+  @include grid-mixin;
+}
+
+@media #{$desktops} {
+  .container {
+    background-color: $background;
+  }
+}
+
+@media #{$tablets} {
+  .container {
+    background-color: pink;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media #{$smartphones} {
+  .container {
+    background-color: green;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 10vh;
+  }
 }
 </style>

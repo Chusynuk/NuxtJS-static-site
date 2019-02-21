@@ -67,4 +67,10 @@ export default {
   color: $black;
   text-decoration: none;
 }
+
+@media #{$smartphones} {
+  .locations {
+    display: none;
+  }
+}
 </style>

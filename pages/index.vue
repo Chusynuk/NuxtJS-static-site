@@ -38,21 +38,42 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "~/assets/scss/index.scss";
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 150px;
-  margin: 0 auto;
-  padding: 150px;
-  min-height: 100vh;
+  @include container-mixin;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  margin-top: 10vh;
+  @include grid-mixin;
+}
+
+@media #{$tablets} {
+  .container {
+    background-color: pink;
+    width: stretchs;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-gap: 8px;
+    // margin-right: 10vw;
+    // margin-right: 10vw;
+  }
+}
+
+@media #{$desktops} {
+  .container {
+    background-color: red;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-gap: 8px;
+    // margin-right: 10vw;
+    // margin-right: 10vw;
+  }
 }
 </style>

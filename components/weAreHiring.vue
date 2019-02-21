@@ -26,7 +26,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 260px;
+  width: 150px;
   height: auto;
   border-radius: 10px;
   background-color: #e0e0e0;

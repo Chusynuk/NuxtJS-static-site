@@ -37,7 +37,9 @@ export default {
 @import "~/assets/scss/index.scss";
 
 .member {
-  width: 260px;
+  // width: 150px;
+  width: 100%;
+  object-fit: cover;
   height: auto;
   border-radius: 10px;
   background-color: #e0e0e0;
@@ -57,6 +59,7 @@ export default {
 .location,
 .job-position,
 .hashtags {
+  width: 100%;
   margin-top: 20px;
   padding-left: 30px;
 }
@@ -68,5 +71,11 @@ export default {
 
 .hashtags {
   padding-bottom: 10px;
+}
+
+@media #{$tablets} {
+  .member {
+    place-self: center;
+  }
 }
 </style>
