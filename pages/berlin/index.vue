@@ -46,4 +46,11 @@ export default {
   padding: 150px;
   min-height: 100vh;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  margin-top: 10vh;
+}
 </style>
