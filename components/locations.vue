@@ -56,6 +56,12 @@ export default {
   margin-top: 100px;
 }
 
+.nuxt-link-exact-active,
+.nuxt-link:active {
+  border-radius: 15px;
+  background-color: $primary-yellow;
+}
+
 .city {
   width: stretch; // OR fill-available
   color: $black;
