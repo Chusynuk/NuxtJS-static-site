@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <headTitle text="TEAM" />
     <locations />
     <div class="grid">
       <teamMember
@@ -10,6 +11,7 @@
         :job-position="member.role"
         :hashtags="member.tags"
       />
+      <weAreHiring />
     </div>
   </section>
 </template>
@@ -17,11 +19,15 @@
 import teamMember from '~/components/teamMember.vue'
 import members from '~/assets/team.json'
 import locations from '~/components/locations.vue'
+import headTitle from '~/components/headTitle.vue'
+import weAreHiring from '~/components/weAreHiring.vue'
 export default {
   name: 'CapeTown',
   components: {
     teamMember,
-    locations
+    locations,
+    headTitle,
+    weAreHiring
   },
   data() {
     return {
