@@ -39,8 +39,14 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      'assets/scss/index.scss'
+    ]
+  },
 
   /*
   ** Build configuration

@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/index.scss";
+// @import "~/assets/scss/index.scss";
 
 .container {
   @include container-mixin;
@@ -51,7 +51,7 @@ export default {
 
 @media #{$tablets} {
   .container {
-    // background-color: pink;
+    background-color: pink;
     width: stretch;
   }
 
@@ -67,7 +67,7 @@ export default {
 
 @media #{$desktops} {
   .container {
-    // background-color: red;
+    background-color: red;
   }
   .grid {
     display: grid;
