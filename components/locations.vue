@@ -1,39 +1,45 @@
 <template>
   <div class="locations">
     <nuxt-link
-      to="/"
+      v-for="(city,index) in links"
+      :key="index"
+      :to="`${city.page}`"
       class="city"
-      name="berlin"
     >
-      All
-    </nuxt-link>
-    <nuxt-link
-      to="/berlin"
-      class="city"
-      name="berlin"
-    >
-      Berlin
-    </nuxt-link>
-    <nuxt-link
-      to="/amsterdam"
-      class="city"
-      name="amsterdam"
-    >
-      Amsterdam
-    </nuxt-link>
-    <nuxt-link
-      to="/capetown"
-      class="city"
-      name="capeTown"
-    >
-      Cape Town
+      {{ city.name }}
     </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Locations'
+  name: 'Locations',
+  data() {
+    return {
+      links: [
+        {
+          id: 0,
+          name: 'All',
+          page: '/'
+        },
+        {
+          id: 1,
+          name: 'Berlin',
+          page: '/berlin'
+        },
+        {
+          id: 2,
+          name: 'Amsterdam',
+          page: '/amsterdam'
+        },
+        {
+          id: 3,
+          name: 'Cape Town',
+          page: '/capetown'
+        }
+      ]
+    }
+  }
 }
 </script>
 
