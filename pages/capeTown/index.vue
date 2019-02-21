@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <locations />
     <div class="grid">
       <teamMember
         v-for="(member, index) in includedCities"
@@ -15,10 +16,12 @@
 <script>
 import teamMember from '~/components/teamMember.vue'
 import members from '~/assets/team.json'
+import locations from '~/components/locations.vue'
 export default {
   name: 'CapeTown',
   components: {
-    teamMember
+    teamMember,
+    locations
   },
   data() {
     return {
