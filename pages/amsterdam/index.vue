@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <headTitle text="TEAM" />
+    <headTitle />
     <locations />
     <div class="grid">
       <teamMember
