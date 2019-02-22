@@ -34,8 +34,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "~/assets/scss/index.scss";
-
 .member {
   // width: 150px;
   width: 100%;
@@ -54,6 +52,7 @@ export default {
   max-height: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-size: cover;
 }
 
 .location,

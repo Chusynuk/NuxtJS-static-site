@@ -17,8 +17,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/index.scss";
-
 .title span {
   font-size: 120px;
   text-transform: uppercase;

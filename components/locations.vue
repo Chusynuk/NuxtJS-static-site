@@ -44,8 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/index.scss";
-
 .locations {
   display: flex;
   justify-content: space-around;
@@ -67,6 +65,10 @@ export default {
   width: stretch; // OR fill-available
   color: $black;
   text-decoration: none;
+}
+
+.city:hover {
+  transform: scale(1.1);
 }
 
 @media #{$smartphones} {

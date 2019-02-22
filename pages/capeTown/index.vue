@@ -58,7 +58,6 @@ export default {
     background-color: pink;
     width: stretch;
   }
-
   .grid {
     width: auto;
     display: grid;
