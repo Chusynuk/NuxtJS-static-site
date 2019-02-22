@@ -13,7 +13,7 @@ export default {
       default: 'TEAM'
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

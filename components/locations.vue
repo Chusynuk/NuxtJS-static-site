@@ -1,9 +1,13 @@
 <template>
-  <div class="locations">
+  <div
+    class="locations"
+    name="locations"
+  >
     <nuxt-link
       v-for="(city,index) in links"
       :key="index"
       :to="`${city.page}`"
+      :name="`${city.name}`"
       class="city"
     >
       {{ city.name }}
@@ -38,9 +42,9 @@ export default {
           page: '/capetown'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -48,7 +52,7 @@ export default {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 50vw;
+  width: 55vw;
   align-items: center;
   border: 2px solid $primary-yellow;
   border-radius: 15px;

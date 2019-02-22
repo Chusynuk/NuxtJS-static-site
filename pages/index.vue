@@ -1,7 +1,5 @@
 <template>
   <section class="container">
-    <headTitle text="TEAM" />
-    <locations />
     <div class="grid">
       <teamMember
         v-for="(member, index) in myMembers"
@@ -17,30 +15,24 @@
 </template>
 
 <script>
-import teamMember from '~/components/teamMember.vue'
-import members from '~/assets/team.json'
-import locations from '~/components/locations.vue'
-import headTitle from '~/components/headTitle.vue'
-import weAreHiring from '~/components/weAreHiring.vue'
+import teamMember from '~/components/teamMember.vue';
+import members from '~/assets/team.json';
+import weAreHiring from '~/components/weAreHiring.vue';
 export default {
   name: 'CapeTown',
   components: {
     teamMember,
-    locations,
-    headTitle,
     weAreHiring
   },
   data() {
     return {
       myMembers: members
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-// @import "~/assets/scss/index.scss";
-
 .container {
   @include container-mixin;
 }
@@ -51,10 +43,9 @@ export default {
 
 @media #{$tablets} {
   .container {
-    background-color: pink;
+    // background-color: pink;
     width: stretch;
   }
-
   .grid {
     width: auto;
     display: grid;
@@ -67,7 +58,7 @@ export default {
 
 @media #{$desktops} {
   .container {
-    background-color: red;
+    // background-color: red;
   }
   .grid {
     display: grid;

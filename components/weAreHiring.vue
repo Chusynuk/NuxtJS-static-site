@@ -15,7 +15,7 @@
 <script>
 export default {
   name: 'WeAreHiring'
-}
+};
 </script>
 
 <style lang="scss" scoped>

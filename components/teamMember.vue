@@ -31,20 +31,19 @@ export default {
       required: true
     }
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .member {
-  // width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   object-fit: cover;
   height: auto;
   border-radius: 10px;
   background-color: #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .profile-photo {
@@ -71,11 +70,5 @@ export default {
 
 .hashtags {
   padding-bottom: 10px;
-}
-
-@media #{$tablets} {
-  .member {
-    //place-self: center;
-  }
 }
 </style>

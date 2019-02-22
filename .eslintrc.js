@@ -14,7 +14,7 @@ module.exports = {
     'plugin:jest/recommended'
   ],
   rules: {
-    'semi': ['error', 'never'],
+    'semi': ['error', 'always'],
     'no-extra-semi': 'error',
     'quotes': ['error', 'single'],
     "jest/no-disabled-tests": "warn",
