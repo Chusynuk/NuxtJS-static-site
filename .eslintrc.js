@@ -4,17 +4,23 @@ module.exports = {
     browser: true,
     node: true
   },
+  plugins:["jest"],
   parserOptions: {
     parser: 'babel-eslint'
   },
-  'extends': [
+  extends: [
     'eslint:recommended',
     'plugin:vue/recommended',
+    'plugin:jest/recommended'
   ],
-  // add your custom rules here
   rules: {
     'semi': ['error', 'never'],
     'no-extra-semi': 'error',
     'quotes': ['error', 'single'],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   }
 }
