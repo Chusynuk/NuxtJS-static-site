@@ -48,5 +48,8 @@
       "^.+.vue$": "vue-jest",
       "^.+.js$": "babel-jest"
     }
-  }
+  },
+  "snapshotSerializers": [
+    "<rootDir>/node_modules/jest-serializer-vue"
+  ]
 }
