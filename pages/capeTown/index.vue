@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="grid">
-      <teamMember
+      <TeamMember
         v-for="(member, index) in includedCities"
         :key="index"
         :image="member.image"
@@ -9,25 +9,29 @@
         :job-position="member.role"
         :hashtags="member.tags"
       />
-      <weAreHiring />
+      <WeAreHiring />
+      <!-- {{ window.$nuxt._route.params }} -->
     </div>
   </section>
 </template>
 <script>
-import teamMember from '~/components/teamMember.vue';
+import TeamMember from '~/components/TeamMember.vue';
 import members from '~/assets/team.json';
-import weAreHiring from '~/components/weAreHiring.vue';
+import WeAreHiring from '~/components/WeAreHiring.vue';
 export default {
   name: 'CapeTown',
   components: {
-    teamMember,
-    weAreHiring
+    TeamMember,
+    WeAreHiring
   },
   data() {
     return {
       myMembers: members
     };
   },
+  // created(): {
+  //   console.log('The id is: ' + this.$route.params.id);
+  // },
   computed: {
     includedCities: function() {
       return this.myMembers.filter(member => member.location === 'cape town');
@@ -37,7 +41,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/scss/index.scss";
+// @import "~/assets/scss/index.scss";
 
 .container {
   @include container-mixin;

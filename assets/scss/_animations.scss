@@ -1,5 +1,5 @@
 .page-enter-active, .page-leave-active {
-  transition: all 0.25s ease-in 0.25s;
+  transition: all 0.50s ease-in 0.1s;
 }
 .page-enter, .page-leave-active {
   opacity: 0;
