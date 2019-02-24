@@ -6,19 +6,34 @@
         class="job-apply"
       >+</a>
     </div>
-    <span class="text-content your-name">YOUR NAME</span>
-    <span class="text-content">We're hiring</span>
-    <span class="text-content">#perspective #grow</span>
+    <span class="text-content your-name">{{ yourName }}</span>
+    <span class="text-content">{{ weAreHiring }}</span>
+    <span class="text-content">{{ hashtags }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WeAreHiring'
+  name: 'WeAreHiring',
+  props: {
+    yourName: {
+      type: String,
+      default: 'YOUR NAME'
+    },
+    weAreHiring: {
+      type: String,
+      default: 'We re hiring'
+    },
+    hashtags: {
+      type: String,
+      default: '#perspective #grow'
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/scss/index.scss";
 .hiring-member {
   display: flex;
   flex-direction: column;
@@ -37,7 +52,7 @@ export default {
   justify-content: center;
   width: inherit;
   background-color: $primary-yellow;
-  height: 195px;
+  height: 190px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -54,7 +69,9 @@ export default {
 }
 
 .text-content {
-  padding-left: 30px;
+  width: 100%;
   margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 </style>

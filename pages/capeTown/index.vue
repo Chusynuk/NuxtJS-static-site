@@ -10,7 +10,6 @@
         :hashtags="member.tags"
       />
       <WeAreHiring />
-      <!-- {{ window.$nuxt._route.params }} -->
     </div>
   </section>
 </template>
@@ -29,9 +28,6 @@ export default {
       myMembers: members
     };
   },
-  // created(): {
-  //   console.log('The id is: ' + this.$route.params.id);
-  // },
   computed: {
     includedCities: function() {
       return this.myMembers.filter(member => member.location === 'cape town');
@@ -41,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "~/assets/scss/index.scss";
+@import "~/assets/scss/index.scss";
 
 .container {
   @include container-mixin;

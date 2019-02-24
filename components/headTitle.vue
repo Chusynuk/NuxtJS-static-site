@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Headtitle',
+  name: 'HeadTitle',
   props: {
     text: {
       type: String,
@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .title span {
-  font-size: 120px;
+  font-size: 175px;
   text-transform: uppercase;
   color: $head-text;
 }
