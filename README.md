@@ -18,9 +18,7 @@ $ yarn start
 # generate static project
 $ yarn run generate
 
-
-# to test components
-
+# test components
 $ yarn run test
 ```
 

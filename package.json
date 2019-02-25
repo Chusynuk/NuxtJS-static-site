@@ -17,7 +17,9 @@
   "dependencies": {
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0"
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.4.0",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.3.1",
@@ -38,9 +40,7 @@
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.0.0",
     "jest": "^23.6.0",
-    "node-sass": "^4.11.0",
     "nodemon": "^1.18.9",
-    "sass-loader": "^7.1.0",
     "vue-jest": "^3.0.2"
   },
   "jest": {
