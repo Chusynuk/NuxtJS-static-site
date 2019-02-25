@@ -40,7 +40,6 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  object-fit: cover;
   height: auto;
   border-radius: 10px;
   background-color: #e0e0e0;
@@ -52,6 +51,7 @@ export default {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-size: cover;
+  object-fit: cover;
 }
 
 .location,
