@@ -8,7 +8,7 @@
     </div>
     <span class="text-content your-name">{{ yourName }}</span>
     <span class="text-content">{{ weAreHiring }}</span>
-    <span class="text-content">{{ hashtags }}</span>
+    <span class="text-content hashtags">{{ hashtags }}</span>
   </div>
 </template>
 
@@ -70,8 +70,12 @@ export default {
 
 .text-content {
   width: 100%;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.hashtags {
+  padding-bottom: 1vh;
 }
 </style>

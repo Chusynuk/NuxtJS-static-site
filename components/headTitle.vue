@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .title span {
-  font-size: 175px;
+  font-size: 12vmax;
   text-transform: uppercase;
   color: $head-text;
 }

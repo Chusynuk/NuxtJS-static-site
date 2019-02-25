@@ -56,7 +56,7 @@ export default {
   align-items: center;
   border: 2px solid $primary-yellow;
   border-radius: 15px;
-  margin-top: 100px;
+  margin-top: 5vh;
 }
 
 .nuxt-link-exact-active,
@@ -72,7 +72,7 @@ export default {
 }
 
 .city:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media #{$smartphones} {

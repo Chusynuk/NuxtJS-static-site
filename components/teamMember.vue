@@ -58,9 +58,9 @@ export default {
 .job-position,
 .hashtags {
   width: 100%;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .location {
@@ -69,6 +69,6 @@ export default {
 }
 
 .hashtags {
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
 }
 </style>
