@@ -44,7 +44,6 @@ export default {
 
 @media #{$tablets} {
   .container {
-    // background-color: pink;
     width: stretch;
   }
   .grid {
@@ -58,9 +57,6 @@ export default {
 }
 
 @media #{$desktops} {
-  .container {
-    // background-color: red;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

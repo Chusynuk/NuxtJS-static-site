@@ -34,6 +34,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "~/assets/scss/index.scss";
 .member {
   display: flex;
   flex-direction: column;
