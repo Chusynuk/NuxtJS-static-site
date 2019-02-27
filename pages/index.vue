@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="grid">
-      <TeamMember
+      <Teammember
         v-for="(member, index) in myMembers"
         :key="index"
         :image="member.image"
@@ -9,20 +9,20 @@
         :job-position="member.role"
         :hashtags="member.tags"
       />
-      <WeAreHiring />
+      <Wearehiring />
     </div>
   </section>
 </template>
 
 <script>
-import TeamMember from '~/components/TeamMember.vue';
+import Teammember from '~/components/Teammember.vue';
 import members from '~/assets/team.json';
-import WeAreHiring from '~/components/WeAreHiring.vue';
+import Wearehiring from '~/components/Wearehiring.vue';
 export default {
   name: 'CapeTown',
   components: {
-    TeamMember,
-    WeAreHiring
+    Teammember,
+    Wearehiring
   },
   data() {
     return {

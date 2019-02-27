@@ -22,7 +22,7 @@ export default {
     },
     weAreHiring: {
       type: String,
-      default: 'We re hiring'
+      default: 'We \' re hiring'
     },
     hashtags: {
       type: String,

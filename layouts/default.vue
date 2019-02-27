@@ -1,17 +1,17 @@
 <template>
   <div class="main-container">
-    <HeadTitle />
+    <Headtitle />
     <Locations />
     <nuxt />
   </div>
 </template>
 
 <script>
-import HeadTitle from '~/components/HeadTitle.vue';
+import Headtitle from '~/components/Headtitle.vue';
 import Locations from '~/components/Locations.vue';
 export default {
   components: {
-    HeadTitle,
+    Headtitle,
     Locations
   }
 };
