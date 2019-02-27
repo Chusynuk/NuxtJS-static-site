@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="locations"
-    name="locations"
-  >
+  <div class="locations">
     <nuxt-link
       v-for="(city,index) in links"
       :key="index"
