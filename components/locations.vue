@@ -38,7 +38,7 @@ export default {
         },
         {
           id: 3,
-          name: 'Cape Town',
+          name: 'Capetown',
           page: '/capetown'
         }
       ]
